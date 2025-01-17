@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aroma - Tu lugar favorito</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #4a2c2a;
+            color: white;
+            text-align: center;
+            padding: 2em;
+        }
+
+        nav {
+            background-color: #6b4c4a;
+            padding: 1em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em;
+        }
+
+        section {
+            background-color: white;
+            padding: 2em;
+            margin-bottom: 2em;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #4a2c2a;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .menu-item {
+            border-bottom: 1px solid #ddd;
+            padding: 1em 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            margin: 0.5em 0;
+            padding: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Café Aroma</h1>
+        <p>Tu lugar favorito para disfrutar del mejor café</p>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección Inicio -->
+        <section id="inicio">
+            <h2>Bienvenidos a Café Aroma</h2>
+            <p>Descubre un espacio único donde el aroma del café recién tostado se mezcla con un ambiente acogedor y tranquilo.</p>
+            <article>
+                <h3>Horario de Atención</h3>
+                <p>Lunes a Viernes: 7:00 AM - 9:00 PM</p>
+                <p>Sábados y Domingos: 8:00 AM - 8:00 PM</p>
+            </article>
+        </section>
+
+        <!-- Sección Menú -->
+        <section id="menu">
+            <h2>Nuestro Menú</h2>
+            <div class="menu-item">
+                <h3>Espresso</h3>
+                <p>Café puro y concentrado</p>
+                <p>Precio: $25</p>
+            </div>
+            <div class="menu-item">
+                <h3>Cappuccino</h3>
+                <p>Espresso con leche espumada</p>
+                <p>Precio: $35</p>
+            </div>
+            <div class="menu-item">
+                <h3>Latte</h3>
+                <p>Café con leche y un toque de espuma</p>
+                <p>Precio: $30</p>
+            </div>
+        </section>
+
+        <!-- Sección Nosotros -->
+        <section id="nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una cafetería comprometida con ofrecer la mejor experiencia en cada taza. Nuestros granos son seleccionados cuidadosamente y tostados a la perfección.</p>
+            <aside>
+                <h3>¿Sabías que?</h3>
+                <p>Todos nuestros baristas son profesionales certificados con años de experiencia.</p>
+            </aside>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+            <address>
+                <p>Dirección: Av. Principal #123, Ciudad</p>
+                <p>Teléfono: (123) 456-7890</p>
+                <p>Email: info@cafearoma.com</p>
+            </address>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Café Aroma. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
